@@ -35,12 +35,12 @@
           <nav class="mobile-menu__navigation">
             <ul class="mobile-menu__pages">
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link mobile-menu__link--active" href="./index.html"
-                  >Головна</a
-                >
+                <a class="mobile-menu__link" href="./index.html">Головна</a>
               </li>
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="./portfolio.html">Каталог</a>
+                <a class="mobile-menu__link mobile-menu__link--active" href="./portfolio.html"
+                  >Каталог</a
+                >
               </li>
               <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="#">Контакти</a>
@@ -89,10 +89,12 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="./index.html">Головна</a>
+              <a class="navigation__link" href="./index.html">Головна</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="./portfolio.html">Каталог</a>
+              <a class="navigation__link navigation__link--current" href="./portfolio.html"
+                >Каталог</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Контакти</a>
@@ -597,5 +599,36 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css" />
+
+    <div class="smart-basket__wrapper"></div>
+
+    <script src="./smartbasket/js/smartbasket.min.js"></script>
+
+    <script>
+      $(function () {
+        $('.smart-basket__wrapper').smbasket({
+          productElement: 'team__item',
+          buttonAddToBasket: 'pokupka',
+          productPrice: 'product__price-number',
+          productSize: 'product__size-element',
+
+          productQuantityWrapper: 'product__quantity',
+          smartBasketMinArea: 'bascet',
+          countryCode: '+7',
+          smartBasketCurrency: '₽',
+          smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+          agreement: {
+            isRequired: true,
+            isChecked: true,
+            isLink: 'https://artstranger.ru/privacy.html',
+          },
+          nameIsRequired: false,
+        });
+      });
+    </script>
   </body>
 </html>

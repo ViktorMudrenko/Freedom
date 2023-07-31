@@ -383,7 +383,7 @@ a {
   transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), box-shadow var(--time-trasform) var(--timing-function), -webkit-box-shadow var(--time-trasform) var(--timing-function);
 }
 .filter__button:hover, .filter__button:focus {
-  background-color: var(--color-brand);
+  background-color: rgba(52, 141, 243, 0.59);
   color: var(--color-text-light);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -609,16 +609,33 @@ a {
 .goods__name {
   padding: 10px;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 16px;
   position: absolute;
   top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  border: 2px white solid;
   border-radius: 3px;
-  background-color: 33, 33, 33, 0.2;
+  background-color: rgba(128, 128, 128, 0.631372549);
+  -webkit-transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), -webkit-box-shadow var(--time-trasform) var(--timing-function);
+  transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), -webkit-box-shadow var(--time-trasform) var(--timing-function);
+  transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), box-shadow var(--time-trasform) var(--timing-function);
+  transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), box-shadow var(--time-trasform) var(--timing-function), -webkit-box-shadow var(--time-trasform) var(--timing-function);
+}
+.goods__name:hover, .goods__name:focus {
+  background-color: rgba(52, 141, 243, 0.49);
+  font-size: 20px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .goods__name {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .goods__name {
+    font-size: 20px;
+  }
 }
 
 .header {
@@ -643,7 +660,7 @@ a {
           align-items: center;
 }
 .header__burger-menu {
-  padding: 10px 0;
+  padding: 5px 0;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,6 +689,7 @@ a {
      object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero {
@@ -706,7 +724,7 @@ a {
 }
 .hero__title {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   max-width: 360px;
@@ -714,12 +732,20 @@ a {
   text-align: center;
   color: var(--color-text-light);
   max-width: 696px;
-  font-size: 44px;
-  line-height: 1.36;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero__title {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 26px;
+  }
 }
 .hero__text {
   font-weight: 400;
-  font-size: 26px;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   max-width: 360px;
@@ -727,8 +753,16 @@ a {
   text-align: center;
   color: var(--color-text-light);
   max-width: 696px;
-  font-size: 44px;
-  line-height: 1.36;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero__text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__text {
+    font-size: 20px;
+  }
 }
 .hero__link {
   display: -webkit-box;
@@ -741,19 +775,33 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   max-width: 360px;
   margin: auto;
   text-align: center;
   color: var(--color-text-light);
-  max-width: 696px;
-  font-size: 24px;
-  line-height: 1.36;
-  border: 2px white solid;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgba(128, 128, 128, 0.631372549);
+  -webkit-transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), -webkit-box-shadow var(--time-trasform) var(--timing-function);
+  transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), -webkit-box-shadow var(--time-trasform) var(--timing-function);
+  transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), box-shadow var(--time-trasform) var(--timing-function);
+  transition: background-color var(--time-trasform) var(--timing-function), color var(--time-trasform) var(--timing-function), box-shadow var(--time-trasform) var(--timing-function), -webkit-box-shadow var(--time-trasform) var(--timing-function);
+}
+.hero__link:hover, .hero__link:focus {
+  background-color: rgba(52, 141, 243, 0.49);
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero__link {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__link {
+    font-size: 20px;
+  }
 }
 .hero__img {
   position: absolute;
@@ -1014,7 +1062,7 @@ a {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
-  padding: 32px 0;
+  padding: 20px 0;
   -webkit-transition: color var(--time-trasform) var(--timing-function);
   transition: color var(--time-trasform) var(--timing-function);
 }
@@ -1326,6 +1374,9 @@ a {
   display: flex;
   border-radius: 250px;
 }
+.product__color:hover, .product__color:focus {
+  border: 2px rgba(52, 141, 243, 0.49) solid;
+}
 .product__color-portfolio {
   border: 1px rgb(184, 184, 184) solid;
   width: 10px;
@@ -1334,6 +1385,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   border-radius: 250px;
+}
+.product__color-portfolio:hover, .product__color-portfolio:focus {
+  border: 2px rgba(52, 141, 243, 0.49) solid;
 }
 .product__color-palazzogray {
   background-color: rgb(187, 187, 187);
@@ -1422,6 +1476,10 @@ a {
   padding: 5px 10px;
   border-radius: 5px;
 }
+.product__size-item:hover, .product__size-item:focus {
+  background-color: rgba(52, 141, 243, 0.49);
+  cursor: pointer;
+}
 .product__button {
   font-size: 16px;
   padding: 20px;
@@ -1445,9 +1503,16 @@ a {
 }
 
 .size-menu {
-  display: none;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 48px 40px;
   z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: var(--color-text-light);
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -1458,21 +1523,9 @@ a {
   transition: transform var(--time-trasform), -webkit-transform var(--time-trasform);
 }
 .size-menu.is-open {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-.size-menu__null {
-  height: 100%;
-  width: 65%;
 }
 .size-menu__close-button {
   position: absolute;
