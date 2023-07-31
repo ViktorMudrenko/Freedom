@@ -1,0 +1,271 @@
+.product {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  @include for-tablet {
+    flex-direction: row;
+  }
+
+  @include for-desktop {
+    flex-direction: row;
+  }
+
+  &__foto {
+    width: 100%;
+    display: none;
+
+    @include for-tablet {
+      width: 65%;
+      display: block;
+    }
+
+    @include for-desktop {
+      width: 65%;
+      display: block;
+    }
+  }
+
+  &__foto-slider {
+    width: 100%;
+
+    @include for-tablet {
+      width: 65%;
+      display: none;
+    }
+
+    @include for-desktop {
+      width: 65%;
+      display: none;
+    }
+  }
+
+  &__info {
+    margin: 0 40px;
+
+    @include for-tablet {
+      width: 25%;
+      margin: 0 auto;
+    }
+
+    @include for-desktop {
+      margin: 0 auto;
+    }
+  }
+
+  &__card {
+    text-align: center;
+
+    @include for-tablet {
+      text-align: start;
+      position: sticky;
+      transform: translate(0, -50%);
+      top: 50%;
+    }
+
+    @include for-desktop {
+      text-align: start;
+      position: sticky;
+      transform: translate(0, -50%);
+      top: 50%;
+    }
+  }
+
+  &__name {
+    font-weight: lighter;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    @include for-tablet {
+      font-size: 36px;
+      margin-bottom: 40px;
+      margin-top: 0;
+    }
+
+    @include for-desktop {
+      font-size: 36px;
+      margin-bottom: 40px;
+      margin-top: 0;
+    }
+  }
+
+  &__price {
+    margin-bottom: 10px;
+
+    @include for-tablet {
+      margin-bottom: 40px;
+    }
+
+    @include for-desktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__price-portfolio {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 12px;
+
+    @include for-tablet {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    @include for-desktop {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__color-list {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px black solid;
+    justify-content: center;
+
+    @include for-tablet {
+      justify-content: flex-start;
+      padding-bottom: 40px;
+    }
+
+    @include for-desktop {
+      justify-content: flex-start;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__color-palitra {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 5px;
+
+    @include for-tablet {
+      padding-bottom: 10px;
+      gap: 20px;
+    }
+
+    @include for-desktop {
+      padding-bottom: 10px;
+      gap: 20px;
+    }
+  }
+
+  &__color {
+    border: 1px rgb(184, 184, 184) solid;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 250px;
+  }
+
+  &__color-portfolio {
+    border: 1px rgb(184, 184, 184) solid;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    border-radius: 250px;
+  }
+
+  &__color-palazzogray {
+    background-color: rgb(187 187 187);
+  }
+
+  &__color-palazzobrown {
+    background-color: #a48e83;
+  }
+
+  &__color-palazzoblack {
+    background-color: black;
+  }
+
+  &__color-shirtwhite {
+    background-color: rgb(252, 252, 252);
+  }
+
+  &__color-shirtblue {
+    background-color: #86acf7;
+  }
+
+  &__color-t-shirtwhite {
+    background-color: #ffffff;
+  }
+
+  &__color-t-shirtblue {
+    background-color: #86acf7;
+  }
+
+  &__color-t-shirtbrown {
+    background-color: rgb(219 197 181);
+  }
+
+  &__color-t-shirtblack {
+    background-color: #000000;
+  }
+
+  &__link {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__size-list {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    justify-content: center;
+
+    @include for-tablet {
+      justify-content: flex-start;
+      margin-top: 40px;
+    }
+
+    @include for-desktop {
+      justify-content: flex-start;
+      margin-top: 40px;
+    }
+  }
+
+  &__size-biglist {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+
+    @include for-tablet {
+      justify-content: flex-start;
+    }
+
+    @include for-desktop {
+      justify-content: flex-start;
+    }
+  }
+
+  &__size-item {
+    font-size: 15px;
+    margin: 5px;
+    background-color: #ded5d570;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  &__button {
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px black solid;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+
+    @include for-tablet {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+
+    @include for-desktop {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+  }
+}

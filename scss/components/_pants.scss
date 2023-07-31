@@ -1,0 +1,45 @@
+.pants {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 50%;
+    border: 1px white solid;
+
+    @include for-tablet {
+      max-width: 33.33%;
+    }
+
+    @include for-desktop {
+      max-width: 25%;
+    }
+  }
+
+  &__link {
+    color: black;
+    font-size: 14px;
+
+    @include for-tablet {
+      font-size: 24px;
+    }
+
+    @include for-desktop {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin: 5px;
+
+    @include for-tablet {
+      margin: 10px;
+    }
+
+    @include for-desktop {
+      margin: 10px;
+    }
+  }
+}
