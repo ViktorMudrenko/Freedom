@@ -76,8 +76,7 @@
   float: right;
 }
 .slick-slide img {
-  object-fit: cover;
-  height: 1000px;
+  display: block;
 }
 .slick-slide.slick-loading img {
   display: none;

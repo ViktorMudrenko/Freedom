@@ -12,7 +12,6 @@
   }
 
   &__foto {
-    width: 100%;
     display: none;
 
     @include for-tablet {
@@ -26,16 +25,20 @@
     }
   }
 
+  &__img {
+    // height: 100%;
+    object-fit: cover;
+  }
+
   &__foto-slider {
     width: 100%;
+    object-fit: cover;
 
     @include for-tablet {
-      width: 65%;
       display: none;
     }
 
     @include for-desktop {
-      width: 65%;
       display: none;
     }
   }

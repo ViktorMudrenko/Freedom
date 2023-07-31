@@ -1089,7 +1089,6 @@ a {
   }
 }
 .product__foto {
-  width: 100%;
   display: none;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1104,18 +1103,22 @@ a {
     display: block;
   }
 }
+.product__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .product__foto-slider {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .product__foto-slider {
-    width: 65%;
     display: none;
   }
 }
 @media (min-width: 1200px) {
   .product__foto-slider {
-    width: 65%;
     display: none;
   }
 }
