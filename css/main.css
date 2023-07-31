@@ -668,13 +668,31 @@ a {
   background-color: var(--color-background);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
+  }
 }
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -683,8 +701,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.hero__blok {
+  margin: auto;
+}
 .hero__title {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
@@ -695,6 +716,44 @@ a {
   max-width: 696px;
   font-size: 44px;
   line-height: 1.36;
+}
+.hero__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  max-width: 360px;
+  margin: auto;
+  text-align: center;
+  color: var(--color-text-light);
+  max-width: 696px;
+  font-size: 44px;
+  line-height: 1.36;
+}
+.hero__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  max-width: 360px;
+  margin: auto;
+  text-align: center;
+  color: var(--color-text-light);
+  max-width: 696px;
+  font-size: 24px;
+  line-height: 1.36;
+  border: 2px white solid;
+  padding: 20px;
+  border-radius: 5px;
 }
 .hero__img {
   position: absolute;
